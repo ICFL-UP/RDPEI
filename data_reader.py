@@ -18,11 +18,11 @@ def split_train_test_valid(filename):
     joblib.dump(X_train, "DATA/TRAIN/X_train.pkl")
     joblib.dump(y_train, "DATA/TRAIN/y_train.pkl")
 
-    joblib.dump(X_test, "DATA/TRAIN/X_test.pkl")
-    joblib.dump(y_test, "DATA/TRAIN/y_test.pkl")
+    joblib.dump(X_test, "DATA/TEST/X_test.pkl")
+    joblib.dump(y_test, "DATA/TEST/y_test.pkl")
 
-    joblib.dump(X_valid, "DATA/TRAIN/X_valid.pkl")
-    joblib.dump(y_valid, "DATA/TRAIN/y_valid.pkl")
+    joblib.dump(X_valid, "DATA/VALID/X_valid.pkl")
+    joblib.dump(y_valid, "DATA/VALID/y_valid.pkl")
     log.log("----- Done Splitting data -----")
 
     # return X_train, y_train, X_valid, y_valid, X_test, y_test
